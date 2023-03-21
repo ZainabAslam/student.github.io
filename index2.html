@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ibtidah</title>
+
+    <style>
+
+        /*slide in*/
+        .slide-in {
+            animation: slideMe .7s ease-in;
+        }
+
+        @keyframes slideMe {
+            0% {
+                transform: skewX(53deg) translateX(500px);
+            }
+
+            100% {
+                transform: skew(0deg);
+            }
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+            #myBtn:hover {
+                background-color: lightgreen;
+            }
+
+
+        #text {
+            width: 100%;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            #text h3 {
+                font-size: 70px;
+                font-weight: 600;
+            }
+
+        span {
+            color: lightgreen;
+        }
+    </style>
+</head>
+
+<body background-color="black">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1><span>I</span>BTI<span>D</span>AH</h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#landing" data-after="Home">Home</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                        <li><a href="story1.html" data-after="Story">Our Story</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+    <!--Video Landing Section Starts-->
+
+    <div id="landing">
+        <div class="texture"></div>
+        <video loop
+               muted
+               autoplay
+               preload="auto">
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+        <div class="landingcaption">
+
+            <div id="text">
+                <h3>
+                    Free World Education For <br /> All <span class="auto-type">
+                    </span>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!--Video Landing Section Ends-->
+    <!--Our Story Section-->
+
+    <div class="abc1">
+        <!--<img src="./img/white.jpg" alt="kid drawing" style="width:100%; height:500px">-->
+
+        <div class="efg">
+            <h1 class="section-title">Our <span>Sto</span>ry</h1>
+
+            <h3 style="color: darkseagreen; text-align: justify;">
+                At a young age, Muhammad was deprived of education and was force into child labor.
+                His tiny hands never learn how to hold a pen, nor his eyes sparkle reading a story book.
+                The urge to be something, turn him into a hard-working person, who's only aim was to gain money and give-up the idea of learning.
+
+                With the passage of time, he once again try to open the old chapter of his life, the chapter that was closed for him, from an early age, to learn. But the harsh reality of our society, responsibilities and lack of resources once again made him to give-up on education once and for all.
+
+                To read the full story <a href="story1.html" target="_blank">Click here</a>
+            </h3>
+        </div>
+    </div>
+    <!--Our Story Section Ends-->
+    <!-- Service Section -->
+    <!--<section id="services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">Our <span>Sto</span>ry</h1>
+                <h3>
+                    The story of Muhammad that lead to the Ibtidah of this organisation
+                    <a href="story1.html" target="_blank">Click here to know our story</a>
+                </h3>
+            </div>
+        </div>
+    </section>-->
+    <!-- End Service Section -->
+    <!--another expeirement-->
+    <!--<section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="./img/3.jpg" alt="img">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>US</span></h1>
+                <h2>The Story of Muhammad</h2>
+                <p>
+                    WHY
+                    IBTIDAH?
+                    Providing free education to Out of School Children, Adults and Elderly in digitally isolated remote areas around the world. Our vision is to make education a reality for every child deprived of this right.
+
+                    Education can help change the lives of these children and pull them out of child labor, and social ignorance.
+                </p>
+
+            </div>
+        </div>
+    </section>-->
+    <!--end another expeirement-->
+    <!--experiment-->
+    <div class="abc" style="padding-top:100px">
+        <img src="./img/kiddraw1.jpg" alt="kid drawing" style="width: 100%; height: 500px;  z-index:-1000">
+
+        <div class="efg">
+
+            <section id="about">
+                <div class="about container" style="z-index: -1000">
+                    <div class="col-left">
+                        <div class="about-img">
+                            <img src="./img/2.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-right" style="opacity:1000">
+                        <h1 class="section-title">About <span>US</span></h1>
+                        <h2>Why Ibtidah?</h2>
+                        <h3>
+                            WHY
+                            IBTIDAH?
+                            Providing free education to Out of School Children, Adults and Elderly in digitally isolated remote areas around the world. Our vision is to make education a reality for every child deprived of this right.
+
+                            Education can help change the lives of these children and pull them out of child labor, and social ignorance.
+                        </h3>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end of experiment-->
+    <!--Experiment 2-->
+
+    <div>
+        <section id="about">
+            <div class="about container">
+                <div class="col-left">
+                    <div class="about-img">
+                        <img src="./img/2.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="col-right" style="opacity:1000">
+                    <div class="slide-in">
+                        <h1 class="section-title">About <span>US</span></h1>                    <h2 class="ab">Why Ibtidah?</h2>
+                        <p class="ab">
+                            WHY
+                            IBTIDAH?
+                            Providing free education to Out of School Children, Adults and Elderly in digitally isolated remote areas around the world. Our vision is to make education a reality for every child deprived of this right.
+
+                            Education can help change the lives of these children and pull them out of child labor, and social ignorance.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!--Experiment 2 ends-->
+    <!-- About Section -->
+    <!--<section id="about" >
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="./img/2.jpg" alt="img">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>US</span></h1>
+                <h2 class="ab">Why Ibtidah?</h2>
+                <p class="ab">
+                    WHY
+                    IBTIDAH?
+                    Providing free education to Out of School Children, Adults and Elderly in digitally isolated remote areas around the world. Our vision is to make education a reality for every child deprived of this right.
+
+                    Education can help change the lives of these children and pull them out of child labor, and social ignorance.
+                </p>
+
+            </div>
+        </div>
+    </section>-->
+    <!-- End About Section -->
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">Don<span>ate</span></h1>
+            </div>
+            <div class="all-projects">
+
+                <div class="project-item">
+                    <div class="project-info-kids">
+                        <h1>For Children</h1>
+
+                        <p>
+                            IBTIDAH, is a commitment to reach out of school CHILDREN and provide free quality education in marginalized and vulnerable communities throughout the world.
+
+                            IBTIDAH is making this happen, through a customized and tailored delivery system developed to address the challenges faced in these communities
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/1.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info-adults">
+                        <h1>For Adults</h1>
+
+                        <p>
+                            IBTIDAH, is a commitment to reach out ADULTS, who wants to pursue education and provide free quality education in marginalized and vulnerable communities throughout the world.
+
+                            IBTIDAH is making this happen, through a customized and tailored delivery system developed to address the challenges faced in these communities
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/4.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info-elderly">
+                        <h1>For Elderly</h1>
+
+                        <p>
+                            IBTIDAH, is a commitment to reach out Elderly, who wants to pursue education and provide free quality education in marginalized and vulnerable communities throughout the world.
+
+                            IBTIDAH is making this happen, through a customized and tailored delivery system developed to address the challenges faced in these communities
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/10.jpg" alt="img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Projects Section -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">Contact <span>info</span></h1>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon" background-color="lightgreen"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>+1 234 123 1234</h2>
+
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>info@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+                    <div class="contact-info">
+                        <h1>Address</h1>
+                        <h2>ABC, City, Country</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>I</span>bti<span>d</span>ah</h1>
+            </div>
+
+            <p>Copyright © 2022 Ibtidah. All rights reserved</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <!--Script for landing part-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: [, "Children", "Adults", "Elderly"],
+            typeSpeed: 75,
+            backSpeed: 75,
+            loop: true
+        })
+    </script>
+    <!--Script for landing part ends-->
+    <!--Script for scroll top button-->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--Script for scroll top button ends-->
+
+
+</body>
+
+</html>

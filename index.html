@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ibtidah</title>
+
+    <style>
+       
+        /*slide in*/
+        .slide-in{
+
+      
+        animation: slideMe .7s ease-in;
+        }
+
+        @keyframes slideMe{
+            0%{
+                transform:skewX(53deg) translateX(500px);
+            }
+            100%{
+                transform:skew(0deg);
+            }
+
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+            #myBtn:hover {
+                background-color: lightgreen;
+            }
+
+      
+        #text {
+            width: 100%;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            #text h3 {
+                font-size: 70px;
+                font-weight: 600;
+            }
+
+        span {
+            color: lightgreen;
+        }
+
+       
+           
+        
+    </style>
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <img src="./img/final logo.png" />
+                        <!--<h1><span>I</span>BTI<span>D</span>AH</h1>-->
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#landing" data-after="Home">Home</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about2" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                        <li><a href="story1.html" data-after="Story">Our Story</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+    <!--Video Landing Section Starts-->
+
+    <div id="landing">
+        <div class="texture"></div>
+        <video loop
+               muted
+               autoplay
+               preload="auto">
+            <source src="./vid/video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+        <div class="landingcaption">
+
+            <div id="text">
+                <h3>
+                    Free World Education For <br /> All <span class="auto-type" style="font-family:'sweet purple'; font-size:80px; font-weight:100">
+                    </span>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!--Video Landing Section Ends-->
+    <!--Our Story edited Section-->
+
+    <div class="abc1">
+        <!--<img src="./img/white.jpg" alt="kid drawing" style="width:100%; height:500px">-->
+        <!--<div class="circle1"></div>-->
+        <div class="efg" style=" margin-top: 150px;  color: white; text-align:right">
+            <!--<h1 class="section-title">Our <span>Sto</span>ry</h1>-->
+            <h1 class="section-title" style=" text-align: right; color: yellow; font-family: 'sweet purple';">Our <span class="auto-type1" style="font-family:'sweet purple'; color:yellow">
+</span></h1>
+            <h3>    At a young age,  </h3>
+            <h1 style="color: yellow;">Muhammad was deprived of education</h1>
+            <h3>
+                and was force into child labor.
+                His tiny hands never learn how to hold a pen ,
+            </h3> <h1 style="color: yellow;">nor his eyes sparkle reading a story book.</h1>
+
+            <h3><br /> To read the full story <a style="color:orange; font-size:45px" href="story1.html" target="_blank">Click here</a></h3>
+
+            <!--<div class="circle"></div>-->
+
+
+
+        </div>
+    </div>
+
+    <!--Our Story edited  Section Ends-->
+    <!--About us Section-->
+
+    <div id="about2" class="abc2">
+       
+        <div class="efg" style=" margin-top: 150px; margin-right: 120px; color: white; text-align: right;">
+            <!--<h1 class="section-title">Our <span>Sto</span>ry</h1>-->
+            <h1 class="section-title" style=" text-align: right; color: lightgreen; font-family: 'sweet purple';">About <span class="auto-type2" style="font-family:'sweet purple'; ">
+</span></h1>
+
+            <h3>
+                Why Ibtidah?
+            </h3>
+            <h1 style="color: lightgreen;">Providing free education</h1>
+            <h3>
+                to Out of School Children, Adults and Elderly in digitally isolated remote areas around the world.
+            </h3> <h1 style="color: lightgreen;">Our vision is to make education a reality for everyone deprived of this right.</h1>
+
+            <h3><br /> Education can help change the lives of these children, adults & elderly</h3>
+
+            <!--<div class="circle"></div>-->
+
+
+
+        </div>
+
+
+    </div>
+    <!--About us Section ends -->
+    <!-- Projects Section -->
+    <div class="abc3" style="margin-bottom: 1000px; letter-spacing: 0.3rem; ">
+        <section id="projects" style="border-radius: 25px;">
+
+            <div class="projects container">
+                <div class="projects-header">
+                    <h1 class="section-title" style="text-align: left; color: white; font-family: 'sweet purple'; ">Don<span>ate</span></h1>
+                </div>
+                <div class="all-projects">
+
+                    <div class="project-item">
+                        <div class="project-info-kids" >
+                            <h1 style="font-family: 'sweet purple';">For Children</h1>
+
+                            <h1 style="font-size: 20px; font-family: 'Comic Sans MS';">Ibtidah, is a commitment to reach </h1>   <h1 style="color: yellow; font-size: x-large; font-family: 'Comic Sans MS';">out of school children</h1>
+                            <h2 style=" font-family: 'Comic Sans MS';">and provide free quality education in marginalized and vulnerable communities throughout the world.</h2>
+                            <p style="font-size: large; font-family: 'Comic Sans MS';">
+                               For Donations  <a href="https://takmil.org/donate/">Click here</a>
+
+                            </p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/2.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info-adults">
+                            <h1 style="font-family: 'sweet purple';">For Adults</h1>
+
+                            <h1 style="font-size: 20px; font-family: 'Comic Sans MS';">Ibtidah, is a commitment to reach </h1>   <h1 style="color: yellow; font-size: x-large; font-family: 'Comic Sans MS';">adults who wants to persure education</h1>
+                            <h2 style=" font-family: 'Comic Sans MS';">and provide free quality education in marginalized and vulnerable communities throughout the world.</h2>
+                            <p style="font-size: large; font-family: 'Comic Sans MS';">
+                                For Donations  <a href="https://www.right-to-education.org/issue-page/th-mes/adult-education-and-learning">Click here</a>
+
+                            </p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/4.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info-elderly">
+                            <h1 style="font-family: 'sweet purple';">For Elderly</h1>
+
+                            <h1 style="font-size: 20px; font-family: 'Comic Sans MS';">Ibtidah, is a commitment to reach </h1>   <h1 style="color: yellow; font-size: x-large; font-family: 'Comic Sans MS';">elderly who wants to persure education</h1>
+                            <h2 style=" font-family: 'Comic Sans MS';">and provide free quality education in marginalized and vulnerable communities throughout the world.</h2>
+                            <p style="font-size: large; font-family: 'Comic Sans MS';">
+                                For Donations  <a href="https://www.right-to-education.org/issue-page/th-mes/adult-education-and-learning">Click here</a>
+
+                            </p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/10.jpg" alt="img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!-- End Projects Section -->
+    <!-- Contact Section -->
+
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">Contact <span>info</span></h1>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon" background-color="lightgreen">
+                        <video loop muted autoplay preload="auto" style="width: 125px; height:125px">
+                            <source src="./vid/videoicon5.mp4" type="video/mp4">
+
+                        </video>
+                    </div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>+1 234 123 1234</h2>
+
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <video loop muted autoplay preload="auto" style="width: 125px; height: 125px ">
+                            <source src="./vid/videoicon6.mp4" type="video/mp4">
+
+                        </video>
+                    </div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>info@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <video loop muted autoplay preload="auto" style="width: 125px; height: 125px ">
+                            <source src="./vid/videoicon7.mp4" type="video/mp4">
+
+                        </video>
+                    </div>
+                    <div class="contact-info">
+                        <h1>Address</h1>
+                        <h2>ABC, City, Country</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Contact Section -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <img src="./img/final logo.png" />
+                <!--<h1><span>I</span>bti<span>d</span>ah</h1>-->
+            </div>
+           
+            <p>Copyright © 2022 Ibtidah. All rights reserved</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <!--Script for landing part-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: [, "Children", "Adults", "Elderly"],
+            typeSpeed: 75,
+            backSpeed: 75,
+            loop: true
+        })
+    </script>
+    <!--Script for landing part ends-->
+    <!--Script for our story part-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type1", {
+            strings: [, "Story :)", "Story :)"],
+            typeSpeed: 75,
+            backSpeed: 75,
+            loop: true
+        })
+    </script>
+    <!--Script for our story ends-->
+
+
+    <!--Script for about us part-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type2", {
+            strings: [, "Us :)", "Us :)"],
+            typeSpeed: 75,
+            backSpeed: 75,
+            loop: true
+        })
+    </script>
+    <!--Script for about us ends-->
+
+
+    <!--Script for scroll top button-->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--Script for scroll top button ends-->
+
+
+</body>
+
+</html>
