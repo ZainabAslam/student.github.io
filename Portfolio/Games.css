@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+   background :radial-gradient(#1d1d1d,#2e2e2e);
+   overflow: hidden;
+}
+.main{
+    display: none;
+    opacity: 0;
+    transition: .5s;
+}
+.glass{
+    width: 600px;
+    height: 550px;
+    backdrop-filter:blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border-radius: 15px;
+    border-top: solid rgba(255, 255, 255, 0.459) 1px;
+    border-left: solid rgba(255, 255, 255, 0.486) .5px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    overflow: hidden;
+    cursor: default;
+}
+.glass::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgb(2, 133, 255);
+    border-radius: 50%;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 0 20px rgb(2, 133, 255),
+    0 0 40px rgb(2, 133, 255) ,
+    0 0 60px rgb(2, 133, 255) ,
+    0 0 80px rgb(2, 133, 255) ,
+    0 0 100px rgb(2, 133, 255),
+    0 0 120px rgb(2, 133, 255),
+    0 0 140px rgb(2, 133, 255) ,
+    0 0 160px rgb(2, 133, 255) ,
+    0 0 180px rgb(2, 133, 255) ,
+    0 0 200px rgb(2, 133, 255);
+    transition: 1s;
+}
+.glass:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    text-align: center;
+    padding: 20px;
+    
+}
+h2{
+    font-family: 'Water Brush', cursive;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.144);
+    font-size: 4em;
+    text-shadow: 340px 420px rgba(255, 255, 255, .1);
+    z-index: 20;
+    letter-spacing: 5px;
+}
+h3{
+    font-size: 3em;
+    color: white;
+    position: relative;
+    top: 150px;
+    left: -100px;
+    font-family: 'Oleo Script', cursive;
+    letter-spacing: 1px;
+
+}
+p{
+    position: relative;
+    top: 200px;
+    font-size: 1.5em;
+    font-family: 'Acme', sans-serif;
+    color: white;
+    text-shadow: -5px 2px 0 rgb(0, 0, 0);
+}
+.glass1{
+    width: 600px;
+    height: 550px;
+    backdrop-filter:blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border-radius: 15px;
+    border-top: solid rgba(255, 255, 255, 0.459) 1px;
+    border-left: solid rgba(255, 255, 255, 0.486) .5px;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    overflow: hidden;
+    cursor: default;
+}
+.glass1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 51, 51);
+    border-radius: 50%;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 0 20px rgb(255, 51, 51),
+    0 0 40px rgb(255, 51, 51) ,
+    0 0 60px rgb(255, 51, 51) ,
+    0 0 80px rgb(255, 51, 51) ,
+    0 0 100px rgb(255, 51, 51),
+    0 0 120px rgb(255, 51, 51),
+    0 0 140px rgb(255, 51, 51) ,
+    0 0 160px rgb(255, 51, 51) ,
+    0 0 180px rgb(255, 51, 51) ,
+    0 0 200px rgb(255, 51, 51);
+    transition: 1s;
+}
+.glass1:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.content1{
+    text-align: center;
+    padding: 20px;
+    
+}
+.box{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.box .eye{
+    position:relative;
+    width: 150px;
+    height: 150px;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgb(68, 95, 253),
+    0 5px 65px rgb(68, 95, 253),
+    0 5px 85px rgb(68, 95, 253),
+    inset 0 0 15px #1d1d1d,
+    inset 0 0 25px #1d1d1d;
+    margin: 0 20px;
+}
+.box .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    border: 10px solid #f2761e;
+    box-shadow: 0 0px 45px #f2761e,
+    0 0px 65px #f2761e,
+    0 0px 85px #f2761e;
+    box-sizing: border-box;
+}
+ .btns {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    top: 250px;
+    left: 400px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+ .btns::before{
+    content: '';
+    position: absolute;
+    border-radius: 8px;
+    background:red;
+    width: 0;
+    height:100%;
+    transition: .5s linear;
+    box-shadow: 0 0 10px red,
+    0 0 20px red,
+    0 0 40px red,
+    0 0 60px red,
+    0 0 80px red;
+}
+ .btns:hover::before{
+    width: 100%;
+    transform: translateX(-50px);
+}
+.btns1 {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    top: 250px;
+    left: 00px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+ .btns1::before{
+    content: '';
+    position: absolute;
+    border-radius: 8px;
+    background:rgb(2, 133, 255);
+    width: 0;
+    height:100%;
+    transition: .5s linear;
+    box-shadow: 0 0 10px rgb(2, 133, 255),
+    0 0 20px rgb(2, 133, 255),
+    0 0 40px rgb(2, 133, 255),
+    0 0 60px rgb(2, 133, 255),
+    0 0 80px rgb(2, 133, 255);
+}
+ .btns1:hover::before{
+    width: 100%;
+    transform: translateX(-50px);
+}
+a{
+    display: flex;
+    border-radius: 8px;
+    position: absolute;
+    font-family: 'Acme' sans-serif;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}

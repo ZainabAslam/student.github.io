@@ -1,0 +1,121 @@
+  *{
+      margin: 0 0.3%; 
+      
+  }
+  .headerr{
+      width: 300px; ;
+      height: 30px;
+      padding: 1%;
+      margin-top: 105px;
+      color: rgb(255, 255, 255);
+     background-color: #e72f52;
+     font-family: "Arial Rounded MT";
+    justify-self: start;
+    margin-left: 30px;
+    display: flex;
+    
+  }
+  .headerr p{
+      padding: 5px;
+      font-size: 20px;
+  }
+ body{
+     background-image: url("/image/Background.jpg");
+ }
+.body {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+input{
+    margin-top: 10px;
+     margin-left: 20px;
+     width: 600px;
+      height: 230px;
+      justify-self: start;
+      text-align: start;
+      border-radius: 20px;
+      font-size: 30px;
+      border: 8px black solid;
+     
+  }
+
+.btn button{
+  position: relative;
+  left: 150px;
+    border:8px white solid; 
+    background-color: black;
+    margin-top: 170px;
+    margin-left: -150px;
+      width: 160px;
+      height:130px;  
+      color: white;
+  }
+.header{
+    margin-top: 100px;
+    border-radius: 8px;
+     height: 50px;
+     width: 850px;
+     margin-left: 75px;
+     padding-top: 15px;
+     font-size: 30px;
+    text-align: center;
+    background-color: white;
+    color: #e72f52;
+    font-family: "Arial Rounded MT";
+  
+}
+.row{
+    height: 750px;
+    width: 1000px;
+   float: right;
+   margin-left: 100px;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+  button {
+    width:270px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 8px black solid;
+    color: black;
+    margin: 10px 10px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: .3s;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+  }
+  button:hover {
+    background-color: #e72f52;
+    transform: scale(1.03);
+  }
+  p{
+      font-size: 18px;
+  }
+  li{
+      height: 60px;
+      width: 50px;
+      margin: 0px 5px;
+      padding-top: 5px;
+      background-color: white;
+      list-style-type: none;
+      display: block;
+      font-size: 30px;
+      color: black;
+      border: 5px black solid;
+      border-radius: 25px;
+      box-sizing: border-box;
+      float: right;
+      transition: .3s;
+  }
+  li:hover{
+      background-color: #e72f52;
+      transform: scale(1.05);
+  }
+
